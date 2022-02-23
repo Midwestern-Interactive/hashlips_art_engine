@@ -95,7 +95,9 @@ const background = {
   default: "#000000",
 };
 
-const extraMetadata = {};
+const extraMetadata = {
+  external_url: "https://landing.metamooseclub.com",
+};
 
 const rarityDelimiter = "#";
 

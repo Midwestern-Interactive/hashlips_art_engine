@@ -37,6 +37,23 @@ const layerConfigurations = [
   },
 ];
 
+// MM layers
+// const layerConfigurations = [
+//   {
+//     growEditionSizeTo: 50,
+//     layersOrder: [
+//       { name: "Background" },
+//       { name: "Skin" },
+//       { name: "Head" },
+//       { name: "Eyes" },
+//       { name: "Mouth" },
+//       { name: "Antlers" },
+//       { name: "Clothes" },
+//       { name: "Special_Effect" },
+//     ],
+//   },
+// ];
+
 const shuffleLayerConfigurations = false;
 
 const debugLogs = false;

@@ -5,54 +5,54 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "MetaMoose Test V2";
-const description = "MetaMoose Collection";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "MM Test v3";
+const description = "MM test collection";
+const baseUri = "ipfs://QmWJ7ZGzQcQtZ2KZHMUcR1vBrjBGotbcUw3z3jKHy1DkuJ";
 
-// const solanaMetadata = {
-//   symbol: "YC",
-//   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-//   external_url: "https://www.youtube.com/c/hashlipsnft",
-//   creators: [
-//     {
-//       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
-//       share: 100,
-//     },
-//   ],
-// };
+const solanaMetadata = {
+  symbol: "YC",
+  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
+  external_url: "https://www.youtube.com/c/hashlipsnft",
+  creators: [
+    {
+      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      share: 100,
+    },
+  ],
+};
 
 // If you have selected Solana then the collection starts from 0 automatically
-// const layerConfigurations = [
-//   {
-//     growEditionSizeTo: 5,
-//     layersOrder: [
-//       { name: "Background" },
-//       { name: "Eyeball" },
-//       { name: "Eye color" },
-//       { name: "Iris" },
-//       { name: "Shine" },
-//       { name: "Bottom lid" },
-//       { name: "Top lid" },
-//     ],
-//   },
-// ];
-
-// MM layers
 const layerConfigurations = [
   {
     growEditionSizeTo: 50,
     layersOrder: [
       { name: "Background" },
-      { name: "Skin" },
-      { name: "Head" },
-      { name: "Eyes" },
-      { name: "Mouth" },
-      { name: "Antlers" },
-      { name: "Clothes" },
-      { name: "Special_Effect" },
+      { name: "Eyeball" },
+      { name: "Eye color" },
+      { name: "Iris" },
+      { name: "Shine" },
+      { name: "Bottom lid" },
+      { name: "Top lid" },
     ],
   },
 ];
+
+// MM layers
+// const layerConfigurations = [
+//   {
+//     growEditionSizeTo: 50,
+//     layersOrder: [
+//       { name: "Background" },
+//       { name: "Skin" },
+//       { name: "Head" },
+//       { name: "Eyes" },
+//       { name: "Mouth" },
+//       { name: "Antlers" },
+//       { name: "Clothes" },
+//       { name: "Special_Effect" },
+//     ],
+//   },
+// ];
 
 const shuffleLayerConfigurations = false;
 
